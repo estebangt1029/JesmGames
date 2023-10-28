@@ -2,26 +2,172 @@
     display: none;
 }
 
-.btn-ig{
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+body{
+    overflow-x: hidden;
 }
 
-
-.bg-gold{
-    background-color: gold;
-}
-.bg-gris{
-    background-color: rgb(130, 130, 130);
+header{
+    opacity: 0.99999;
+    background-color: white;
 }
 
-.text-gold{
-    color: gold;
-}
-
-.bg-jesm{
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 22%;
+    overflow: hidden;
+    z-index: -1;
     background-color: black;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 110px;
+    height: 110px;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    background-image: url(https://play-lh.googleusercontent.com/D_KblLmWmgxRo07tVpTVj1ysGhJuJ3n5Rv_FC6xO5h3E9Pwmv6v7x6kYWztqX9VsAklR);
+    background-size: cover;
+}
+
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+    background-image: url(https://play-lh.googleusercontent.com/LByrur1mTmPeNr0ljI-uAUcct1rzmTve5Esau1SwoAzjBXQUby6uHIfHbF9TAT51mgHm);
+    background-size: cover;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 4s;
+    background-image: url(https://play-lh.googleusercontent.com/QS3DlBfMC-GB8nuB-k0nyZJazsoGrnFeUpEaKEbTP26ZNjer3hVXdkmjKG9C6Bg3qw);
+    background-size: cover;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+    background-image: url(https://play-lh.googleusercontent.com/hO7716hh7NCcFauJedDclX-R3Zh9JmbSs8AUU6TP2edGVILlZM7gmyt_8WPCZELiPQA);
+    background-size: cover;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    background-image: url(https://play-lh.googleusercontent.com/QP1Aoz6HjHTjcY0L8LmwdX6xa60sRYd_qU9kOqwI05oBm2dGug6RD95HM21E_VazC9g);
+    background-size: cover;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 3s;
+    background-image: url(https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP);
+    background-size: cover;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 7s;
+    background-image: url(https://play-lh.googleusercontent.com/bPz1guJ6FHF3oIOEy3KqwpaDDKO-hLRaZoyzmM8bLFLN8fWm6L0_EuUnkwv9iqPo3Ag);
+    background-size: cover;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+    background-image: url(https://play-lh.googleusercontent.com/N9GV1cxsl8X66YtXpoMHSENFAEQ90L9IGnWArJdWVmKEgrHMPmlROXhfw8B3SQCCnOk4);
+    background-size: cover;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+    background-image: url(https://play-lh.googleusercontent.com/cYCOK_6WekaMoH48Z-0EbYK7_6_L__VOCy6C6h6L4NAfKvkYeNmYrdQZ0V6T2HGjng);
+    background-size: cover;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+    background-image: url(https://play-lh.googleusercontent.com/6HYUpw6sUqvP726qcaIuXZRD5_0hAuMTZkAMeBuoaiMPOM7oVBSD8PsGteUe89gP7XY);
+    background-size: cover;
+}
+
+
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .filtro {
+        display: block; /* Cambiar la propiedad 'display' según tus necesidades */
+    }
+
+    header{
+        background-color: transparent;
+    }
+
+    .links{
+        color: white;
+    }
+
+    .circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 27.5%;
+        overflow: hidden;
+        z-index: -1;
+        background-color: black;
+    }
+
 }
